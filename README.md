@@ -16,4 +16,7 @@ call LoadPlugins()
 plugin-manager reads plugins from the variable `g:plugins`.
 It then tries loading the plugin file. In the example it would load the file `~/.vim/plugins/snippets.vim`.
 `call LoadPlugins()` loads the plugins. If you were to change the plugin list at runtime do `:Loadplugins`.
-
+## Variables
+- `g:plugins`: The list of plugins to load
+- `g:pluginmanagerlistloaded`: set it to 1 if you want to list all loaded plugins at startup
+- `g:pluginmanagerloaded`: says if the pluginmanager has been loaded (should not be edited by users)

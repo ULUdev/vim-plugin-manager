@@ -7,6 +7,10 @@ if exists('g:pluginmanagerloaded')
 	finish
 endif
 
+if exists('g:pluginmanagerlistloaded') == 0
+	let g:pluginmanagerlistloaded = 0
+endif
+
 function! LoadPlugins()
 	if exists('g:plugins')
 		let plugincounter = 0
@@ -18,7 +22,9 @@ function! LoadPlugins()
 				echo 'plugin ' . plugin . ' could not be loaded, skipping...'
 			endif
 		endfor
-		echo 'loaded ' . plugincounter . ' plugins!'
+		if g:pluginmanagerlistloaded == 1
+			echo 'loaded ' . plugincounter . ' plugins!'
+		endif
 	else
 		echo 'no plugins defined (use g:plugins for defining plugins)'
 	endif
