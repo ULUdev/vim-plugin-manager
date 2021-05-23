@@ -1,6 +1,6 @@
 # plugin-manager
 ## a simple plugin manager for vim
-plugin-manager is nothing fancy. It doenst automatically download the needed plugin files. You have to do that yourself.
+plugin-manager is nothing fancy. It doesn't automatically download the needed plugin files. You have to do that yourself.
 But it works and is easy to understand.
 ## Installation
 To install it run `$ curl https://gitlab.sokoll.com/moritz/vim-plugin-manager/-/raw/master/install.sh | bash`.
@@ -19,4 +19,4 @@ It then tries loading the plugin file. In the example it would load the file `~/
 ## Variables
 - `g:plugins`: The list of plugins to load
 - `g:pluginmanagerlistloaded`: set it to 1 if you want to list all loaded plugins at startup
-- `g:pluginmanagerloaded`: says if the pluginmanager has been loaded (should not be edited by users)
+- `g:pluginmanagerloaded`: says if the plugin-manager has been loaded (should not be edited by users)
