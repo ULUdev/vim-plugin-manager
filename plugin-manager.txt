@@ -1,0 +1,33 @@
+*plugin-manager.txt*	For Vim version 8.2	Last change: 2021 June 7
+
+
+
+a simple plugin-manager for vim			*plugin-manager*
+
+1. Usage and configuration			|plugin-manager-usage|
+2. :Loadplugins					|plugin-manager-load|
+
+==============================================================================
+1. Usage and configuration			*plugin-manager-usage*
+
+CONFIGURATION
+This plugin manager is configured with the `g:plugins` variable: >
+    let g:plugins = ['git-control', 'snippets']
+<
+This tells plugin manager which files to load. It will load files from
+~/.vim/plugins.
+
+Note: plugin-manager will look for .vim files so `'git-control'` refers to
+~/.vim/plugins/git-control.vim
+
+USAGE
+To load plugins add the following line to your vimrc: >
+    call LoadPlugins()
+<
+You can also use a command:
+
+		*:Loadplugins*
+:Loadplugins	load all plugins stored inside of `g:plugins`
+
+
+ vim:tw=78:ts=8:noet:ft=help:norl:

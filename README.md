@@ -21,3 +21,7 @@ Don't add plugin-manager itself to the plugins list.
 - `g:plugins`: The list of plugins to load
 - `g:pluginmanagerlistloaded`: set it to 1 if you want to list all loaded plugins at startup
 - `g:pluginmanagerloaded`: says if the plugin-manager has been loaded (should not be edited by users)
+
+## Further Documentation
+Using the installation method explained above you'll get a help page for vim.
+It should be used as a documentation
